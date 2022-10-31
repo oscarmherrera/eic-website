@@ -1,4 +1,7 @@
 import { Component, OnInit, OnDestroy, HostListener, ElementRef } from '@angular/core';
+import {EicContactFormComponent} from "../components/eic-contact-form/eic-contact-form.component";
+import { MatDialog, MatDialogRef} from '@angular/material/dialog';
+
 
 declare const $: any;
 
@@ -17,12 +20,12 @@ export class PresentationComponent implements OnInit, OnDestroy {
     };
     date : Date = new Date();
 
-     constructor(public el: ElementRef) { }
+     constructor(public el: ElementRef, public dialog: MatDialog) { }
      @HostListener('window:scroll', ['$event'])
      checkScroll() {
         const componentPosition = document.getElementsByClassName('add-animation');
         const scrollPosition = window.pageYOffset;
-        
+
         for(var i = 0; i < componentPosition.length; i++) {
             var rec = componentPosition[i].getBoundingClientRect().top + window.scrollY + 100;
             if ( scrollPosition + window.innerHeight >= rec ) {
@@ -65,5 +68,16 @@ export class PresentationComponent implements OnInit, OnDestroy {
         body.classList.remove('loading');
         var navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.remove('navbar-transparent');
+    }
+
+    onClick() {
+        const dialogRef = this.dialog.open(EicContactFormComponent , {
+            width: '75%'
+            // data: {name: this.name, animal: this.animal}
+        }
+        );
+        dialogRef.afterClosed().subscribe(result => {
+
+        });
     }
 }

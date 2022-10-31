@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { TagInputModule } from 'ngx-chips';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { ImageUploadModule } from '../shared/image-upload/image-upload.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { BasicelementsComponent } from './basicelements/basicelements.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -23,6 +24,8 @@ import { InfoAreasComponent } from './info-areas/info-areas.component';
 import { TablesAreasComponent } from './tables-areas/tables-areas.component';
 import { CommentsAreasComponent } from './comments-areas/comments-areas.component';
 import { CardsAreasComponent } from './cards-areas/cards-areas.component';
+import { EicContactFormComponent } from './eic-contact-form/eic-contact-form.component';
+
 
 @NgModule({
     imports: [
@@ -34,7 +37,10 @@ import { CardsAreasComponent } from './cards-areas/cards-areas.component';
         JwBootstrapSwitchNg2Module,
         AngularMultiSelectModule,
         NgxGalleryModule,
-        ImageUploadModule
+        ImageUploadModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+
     ],
     declarations: [
         ComponentsComponent,
@@ -50,7 +56,8 @@ import { CardsAreasComponent } from './cards-areas/cards-areas.component';
         InfoAreasComponent,
         TablesAreasComponent,
         CommentsAreasComponent,
-        CardsAreasComponent
+        CardsAreasComponent,
+        EicContactFormComponent
     ],
     exports:[ ComponentsComponent ]
 })

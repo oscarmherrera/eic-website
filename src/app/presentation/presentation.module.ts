@@ -16,7 +16,7 @@ import { PresentationComponent } from './presentation.component';
         NgbModule
     ],
     declarations: [ PresentationComponent ],
-    exports:[ PresentationComponent ],
+    exports:[ PresentationComponent],
     providers: []
 })
 export class PresentationModule { }

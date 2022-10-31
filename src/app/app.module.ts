@@ -12,11 +12,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
 import { PresentationModule } from './presentation/presentation.module';
+import {ContactFormService} from "./services/contact-form.service";
+import { MaterialModule } from './material.module';
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
     ],
     imports: [
         BrowserAnimationsModule,
@@ -27,9 +29,12 @@ import { PresentationModule } from './presentation/presentation.module';
         PresentationModule,
         SectionsModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+        MaterialModule
     ],
-    providers: [],
+    providers: [
+        ContactFormService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
