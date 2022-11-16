@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class ContactFormService {
-  private api = "https://mailthis.to/oscar@e-i-c.global"
+  private api = "https://mailthis.to/info@e-i-c.global"
 
   constructor(
       private http: HttpClient
