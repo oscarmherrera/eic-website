@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { SectionsModule } from './sections/sections.module';
 import { ComponentsModule } from './components/components.module';
-import { ExamplesModule } from './examples/examples.module';
+// import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -29,7 +29,7 @@ import {HttpClientModule} from "@angular/common/http";
         PresentationModule,
         SectionsModule,
         ComponentsModule,
-        ExamplesModule,
+        // ExamplesModule,
         HttpClientModule
     ],
     providers: [
