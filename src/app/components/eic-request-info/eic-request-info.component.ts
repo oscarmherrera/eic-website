@@ -32,15 +32,15 @@ export class EicRequestInfoComponent {
 
   onSubmit(FormData: any) {
     console.log(this.formData)
-    // this.contact.PostMessage(FormData)
-    //     .subscribe(response => {
-    //       this.dialogRef.close()
-    //       location.href = 'https://mailthis.to/confirm'
-    //       console.log(response)
-    //     }, error => {
-    //       console.warn(error.responseText)
-    //       console.log({error})
-    //     })
+    this.contact.PostMessage(FormData)
+        .subscribe(response => {
+          this.modalService.dismissAll("submitted-sent")
+          location.href = 'https://mailthis.to/confirm'
+          console.log(response)
+        }, error => {
+          console.warn(error.responseText)
+          console.log({error})
+        })
     this.modalService.dismissAll("submitted")
   }
 

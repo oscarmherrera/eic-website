@@ -13,7 +13,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 
 import { PresentationModule } from './presentation/presentation.module';
 import {ContactFormService} from "./services/contact-form.service";
-import { MaterialModule } from './material.module';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
     declarations: [
@@ -30,7 +30,7 @@ import { MaterialModule } from './material.module';
         SectionsModule,
         ComponentsModule,
         ExamplesModule,
-        MaterialModule
+        HttpClientModule
     ],
     providers: [
         ContactFormService
