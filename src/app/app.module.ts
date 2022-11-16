@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app.routing';
 import { SectionsModule } from './sections/sections.module';
 import { ComponentsModule } from './components/components.module';
 // import { ExamplesModule } from './examples/examples.module';
+import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -29,7 +31,8 @@ import {HttpClientModule} from "@angular/common/http";
         PresentationModule,
         SectionsModule,
         ComponentsModule,
-        // ExamplesModule,
+        NgxGoogleAnalyticsModule.forRoot('G-WJ5TWWVPP7'),
+        NgxGoogleAnalyticsRouterModule,
         HttpClientModule
     ],
     providers: [
