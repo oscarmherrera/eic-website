@@ -1,19 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { EicContactFormComponent } from './eic-contact-form.component';
 
-describe('EicContactFormComponent', () => {
-  let component: EicContactFormComponent;
-  let fixture: ComponentFixture<EicContactFormComponent>;
+import { EicRequestInfoComponent } from './eic-request-info.component';
+
+describe('EicRequestInfoComponent', () => {
+  let component: EicRequestInfoComponent;
+  let fixture: ComponentFixture<EicRequestInfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EicContactFormComponent ]
+      declarations: [ EicRequestInfoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EicContactFormComponent);
+    fixture = TestBed.createComponent(EicRequestInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

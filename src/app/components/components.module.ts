@@ -8,7 +8,6 @@ import { TagInputModule } from 'ngx-chips';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { ImageUploadModule } from '../shared/image-upload/image-upload.module';
-import { HttpClientModule } from '@angular/common/http';
 
 import { BasicelementsComponent } from './basicelements/basicelements.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -24,8 +23,7 @@ import { InfoAreasComponent } from './info-areas/info-areas.component';
 import { TablesAreasComponent } from './tables-areas/tables-areas.component';
 import { CommentsAreasComponent } from './comments-areas/comments-areas.component';
 import { CardsAreasComponent } from './cards-areas/cards-areas.component';
-import { EicContactFormComponent } from './eic-contact-form/eic-contact-form.component';
-
+import {EicRequestInfoComponent} from "./eic-request-info/eic-request-info.component";
 
 @NgModule({
     imports: [
@@ -38,9 +36,7 @@ import { EicContactFormComponent } from './eic-contact-form/eic-contact-form.com
         AngularMultiSelectModule,
         NgxGalleryModule,
         ImageUploadModule,
-        HttpClientModule,
-        ReactiveFormsModule,
-
+        ReactiveFormsModule
     ],
     declarations: [
         ComponentsComponent,
@@ -57,8 +53,8 @@ import { EicContactFormComponent } from './eic-contact-form/eic-contact-form.com
         TablesAreasComponent,
         CommentsAreasComponent,
         CardsAreasComponent,
-        EicContactFormComponent
+        EicRequestInfoComponent
     ],
-    exports:[ ComponentsComponent ]
+    exports:[ ComponentsComponent,EicRequestInfoComponent ]
 })
 export class ComponentsModule { }

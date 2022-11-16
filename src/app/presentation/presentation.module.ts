@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 
 import { PresentationComponent } from './presentation.component';
+import {ComponentsModule} from "../components/components.module";
 
 @NgModule({
     imports: [
@@ -13,7 +14,8 @@ import { PresentationComponent } from './presentation.component';
         BrowserModule,
         FormsModule,
         RouterModule,
-        NgbModule
+        NgbModule,
+        ComponentsModule
     ],
     declarations: [ PresentationComponent ],
     exports:[ PresentationComponent],
