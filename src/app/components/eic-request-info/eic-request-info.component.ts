@@ -12,7 +12,7 @@ import {ContactFormService} from '../../contact-form.service';
 export class EicRequestInfoComponent {
 
   closeResult: string;
-  FormData: FormGroup;
+  formData: FormGroup;
 
   constructor(
       private builder: FormBuilder,
@@ -20,7 +20,7 @@ export class EicRequestInfoComponent {
       private modalService: NgbModal) {}
 
   ngOnInit(): void {
-    this.FormData = this.builder.group({
+    this.formData = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
       Email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),
       OptInServiceAvailable: new FormControl(''),
@@ -29,7 +29,9 @@ export class EicRequestInfoComponent {
     })
 
   }
+
   onSubmit(FormData: any) {
+    console.log(this.formData)
     // this.contact.PostMessage(FormData)
     //     .subscribe(response => {
     //       this.dialogRef.close()
@@ -39,10 +41,11 @@ export class EicRequestInfoComponent {
     //       console.warn(error.responseText)
     //       console.log({error})
     //     })
+    this.modalService.dismissAll("submitted")
   }
 
   onCancel() {
-
+    this.modalService.dismissAll("cancelled")
   }
 
   open(content, type) {
