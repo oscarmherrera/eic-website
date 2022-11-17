@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms';
 import {ContactFormService} from '../../contact-form.service';
 
 
@@ -12,20 +12,20 @@ import {ContactFormService} from '../../contact-form.service';
 export class EicRequestInfoComponent {
 
   closeResult: string;
-  formData: FormGroup;
+  formData: UntypedFormGroup;
 
   constructor(
-      private builder: FormBuilder,
+      private builder: UntypedFormBuilder,
       private contact: ContactFormService,
       private modalService: NgbModal) {}
 
   ngOnInit(): void {
     this.formData = this.builder.group({
-      Fullname: new FormControl('', [Validators.required]),
-      Email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),
-      OptInServiceAvailable: new FormControl(''),
-      OptOutFromUpdateEmails: new FormControl(''),
-      Comment: new FormControl('')
+      Fullname: new UntypedFormControl('', [Validators.required]),
+      Email: new UntypedFormControl('', [Validators.compose([Validators.required, Validators.email])]),
+      OptInServiceAvailable: new UntypedFormControl(''),
+      OptOutFromUpdateEmails: new UntypedFormControl(''),
+      Comment: new UntypedFormControl('')
     })
 
   }
