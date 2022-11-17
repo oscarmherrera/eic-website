@@ -35,7 +35,17 @@
     position: relative;
 }
 
-.presentation-page .section-cards .image-container .eic-mission {
+.presentation-page .section-cards .eic-image-container {
+    max-width: 1040px;
+    margin-top: -40px;
+    position: relative;
+    //height: 660px;
+    height: 400px;
+}
+
+
+
+.presentation-page .section-cards .eic-image-container .eic-mission {
     max-width: 850px;
     left: 0px;
     top: 50px;
