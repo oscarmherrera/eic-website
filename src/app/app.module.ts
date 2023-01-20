@@ -38,6 +38,9 @@ import {HttpClientModule} from "@angular/common/http";
     providers: [
         ContactFormService
     ],
+    exports: [
+        NavbarComponent
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

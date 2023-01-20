@@ -1,17 +1,25 @@
 <nav class="navbar navbar-expand-lg fixed-top nav-down" color-on-scroll="500">
-<!--    <div class="container">-->
-<!--        <div class="navbar-translate">-->
-<!--            <div class="navbar-header">-->
-<!--                <a class="navbar-brand" [routerLink]="['/presentation']">Paper Kit 2 PRO Angular</a>-->
-<!--            </div>-->
-<!--            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">-->
-<!--                <span class="navbar-toggler-bar bar1"></span>-->
-<!--                <span class="navbar-toggler-bar bar2"></span>-->
-<!--                <span class="navbar-toggler-bar bar3"></span>-->
-<!--            </button>-->
-<!--        </div>-->
-<!--        <div class="collapse navbar-collapse">-->
-<!--            <ul class="navbar-nav ml-auto">-->
+    <div class="container">
+        <div class="navbar-translate">
+            <div class="navbar-header">
+                <a class="navbar-brand" [routerLink]="['/presentation']">The Earth I Curate</a>
+            </div>
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <div ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" ngbDropdownToggle>Uniforms</div>
+                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
+                        <a ngbDropdownItem [routerLink]="['/presentation']"><i class="icon icon-e-i-c-ecology"></i>Overview</a>
+                        <a ngbDropdownItem [routerLink]="['/presentation']"><i class="icon icon-e-i-c-family-1"></i>Families</a>
+                        <a ngbDropdownItem [routerLink]="['/presentation']"><i class="icon icon-e-i-c-tshirt-53"></i>Garments</a>
+                    </div>
+                </div>
 <!--                <div ngbDropdown class="nav-item dropdown">-->
 <!--                    <div class="nav-link dropdown-toggle" ngbDropdownToggle>Components</div>-->
 <!--                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">-->
@@ -54,11 +62,11 @@
 <!--                    </div>-->
 <!--                </div>-->
 <!--                <li class="nav-item">-->
-<!--                    <a class="btn btn-round btn-danger" href="https://www.creative-tim.com/product/paper-kit-2-pro-angular">-->
-<!--                        <i class="nc-icon nc-cart-simple"></i> Buy now-->
+<!--                    <a class="nav-link" href="https://www.creative-tim.com/product/paper-kit-2-pro-angular">-->
+<!--                        <i class="nc-icon nc-cart-simple"></i> Uniforms-->
 <!--                    </a>-->
 <!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
+            </ul>
+        </div>
+    </div>
 </nav>

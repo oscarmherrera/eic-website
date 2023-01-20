@@ -25,6 +25,7 @@
               "node_modules/angular2-multiselect-dropdown/themes/default.theme.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/css/nucleo-icons.css",
+              "src/assets/css/Nucleo-e-i-c-icons.css",
               "src/assets/scss/paper-kit.scss",
               "src/assets/demo/demo.css"
             ],
@@ -102,7 +103,8 @@
               "src/assets/sass/paper-kit.scss",
               "src/assets/sass/demo.scss",
               "node_modules/font-awesome/css/font-awesome.css",
-              "src/assets/css/nucleo-icons.css"
+              "src/assets/css/nucleo-icons.css",
+              "src/assets/css/Nucleo-e-i-c-icons.css"
             ],
             "assets": [
               "src/assets",

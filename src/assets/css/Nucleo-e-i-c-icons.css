@@ -1,0 +1,168 @@
+/*--------------------------------
+
+Nucleo-e-i-c icon font
+Generated using nucleoapp.com
+
+-------------------------------- */
+
+@font-face {
+  font-family: 'Nucleo-e-i-c';
+  src: url('../fonts/Nucleo-e-i-c.eot');
+  src: url('../fonts/Nucleo-e-i-c.eot') format('embedded-opentype'),
+       url('../fonts/Nucleo-e-i-c.woff2') format('woff2'),
+       url('../fonts/Nucleo-e-i-c.woff') format('woff'),
+       url('../fonts/Nucleo-e-i-c.ttf') format('truetype'),
+       url('../fonts/Nucleo-e-i-c.svg') format('svg');
+}
+
+/* base class */
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'Nucleo-e-i-c';
+  color: inherit;
+  flex-shrink: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* size examples - relative units */
+.icon-sm {
+  font-size: 0.8em;
+}
+
+.icon-lg {
+  font-size: 1.2em;
+}
+
+/* size examples - absolute units */
+.icon-16 {
+  font-size: 16px;
+}
+
+.icon-32 {
+  font-size: 32px;
+}
+
+/* rotate the icon infinitely */
+.icon-is-spinning {
+  animation: icon-spin 1s infinite linear;
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* transform */
+.icon-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.icon-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.icon-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.icon-flip-y {
+  transform: scaleY(-1);
+}
+
+.icon-flip-x {
+  transform: scaleX(-1);
+}
+
+/* icons */
+.icon-e-i-c-family-roof::before {
+  content: "\ea02";
+}
+
+.icon-e-i-c-family::before {
+  content: "\ea03";
+}
+
+.icon-e-i-c-tshirt-53::before {
+  content: "\ea04";
+}
+
+.icon-e-i-c-swimsuit::before {
+  content: "\ea05";
+}
+
+.icon-e-i-c-skirt::before {
+  content: "\ea06";
+}
+
+.icon-e-i-c-jeans-41::before {
+  content: "\ea07";
+}
+
+.icon-e-i-c-world::before {
+  content: "\ea08";
+}
+
+.icon-e-i-c-ecology::before {
+  content: "\ea09";
+}
+
+.icon-e-i-c-bulb::before {
+  content: "\ea0a";
+}
+
+.icon-e-i-c-tree-01::before {
+  content: "\ea0b";
+}
+
+.icon-e-i-c-family-roof-1::before {
+  content: "\ea0c";
+}
+
+.icon-e-i-c-family-1::before {
+  content: "\ea0d";
+}
+
+.icon-e-i-c-spain::before {
+  content: "\ea0e";
+}
+
+.icon-e-i-c-uk::before {
+  content: "\ea0f";
+}
+
+.icon-e-i-c-netherlands::before {
+  content: "\ea10";
+}
+
+.icon-e-i-c-cabinet::before {
+  content: "\ea11";
+}
+
+.icon-e-i-c-wardrobe::before {
+  content: "\ea12";
+}
+
+.icon-e-i-c-cockade::before {
+  content: "\ea13";
+}
+
+.icon-e-i-c-round-euro::before {
+  content: "\ea14";
+}
+
+.icon-e-i-c-round-dollar::before {
+  content: "\ea15";
+}
+
+.icon-e-i-c-round-pound::before {
+  content: "\ea16";
+}
+
+.icon-e-i-c-at-sign-2::before {
+  content: "\ea17";
+}
